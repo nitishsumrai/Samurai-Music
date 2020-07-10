@@ -1,0 +1,724 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+* {
+    color: #FFF5EE;
+}
+
+body {
+    background-image: linear-gradient(To right, #2857a4, #403066);
+
+    position: relative;
+}
+
+#main-div {
+    width: 100%;
+    padding:5em 0em;
+    position: relative;
+}
+
+main {
+    margin-top: 1em;
+    width: 68%;
+    display: inline-block;
+    height: auto;
+    padding-left: 5em;
+}
+
+/* utilities */
+.heading {
+    font-size: 1.5em;
+    line-height: 2em;
+    display: block;
+    font-family: sans-serif;
+}
+
+.name-date {
+    text-align: start;
+    width: auto;
+    height: 4em;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.song-name {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+.date-time-singer {
+    font-size: .8em;
+    font-family: sans-serif;
+
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 3em;
+}
+
+.flext-item {
+    font-size: 1em;
+    height: auto;
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+.dropdown-content {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+     
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Navigation bar */
+header {
+    z-index: 2;
+    position: fixed;
+}
+
+.logo-profile {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    margin-right: .2em;
+}
+
+.fixed-div {
+    background-image: linear-gradient(To right, #2857a4, #403066);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1em;
+    padding-top: 0em;
+    margin-bottom: 1em;
+}
+
+.flex-container-nav {
+    font-size: 1em;
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+}
+
+.logo-name {
+    width: auto;
+    justify-content: start;
+}
+
+.nav-item h4 {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.search-input input {
+    padding: .4em;
+    padding-left: 2em;
+    font-size: 1em;
+}
+
+.search-input {
+    height: auto;
+    width: auto;
+    position: relative;
+
+}
+
+.search-input input {
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: grey;
+}
+
+.search-input i {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+}
+
+.search-input i {
+    margin: .4em;
+    position: absolute;
+
+}
+
+/* Favourate   */
+
+#fav-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+#fav-container img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.fav-item-container {
+    width: 50%;
+    height: 13em;
+    margin-top: 2em;
+}
+
+.fav-main-item {
+    width: 70%;
+    height: 17em;
+    left: 15%;
+    position: absolute;
+
+}
+
+/* Latest release */
+
+.release-flex-container {
+    justify-content: start;
+}
+
+.release-song-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7em;
+    width: 40%;
+    min-width: 15em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.release-song-container img {
+    height: 7em;
+    width: 7em;
+    background-size: contain;
+}
+.menu-length-container:hover .dropdown-content{
+    display: block;
+    left: -5em;
+
+}
+.menu-length-container {
+    float: right;
+    position: relative;
+}
+
+.menu-length-container * {
+    float: right;
+}
+
+/* Popular-artists */
+
+.singer {
+    width: 8em;
+    height: auto;
+}
+
+
+
+.singer h4 {
+    width: 100%;
+    text-align: center;
+}
+
+/* stations */
+ /* The Hovering feature from this 
+ section is used in Popular Artist Section too */
+#stations {
+    background-color: #101642;
+    margin-bottom: 1em;
+    padding:0em 2em;
+}
+
+.station-flex-container {
+    padding:1em 0em;
+    align-items: center;
+}
+
+.stations-card {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 2em;
+    width: 8.5em;
+    height: 8.5em;
+    background-image: url(bohemia-pic.jpg);
+    background-size: cover;
+    
+}
+
+.genre-divs {
+    width: 7em;
+    height: 7em;
+    background-image: url(bohemia-pic.jpg);
+    border-radius: 50%;
+}
+
+.hover-icon {
+    opacity: 0;
+    position: relative;
+    background-image: unset;
+    transition: .3s ease;
+    background-color: grey;
+    transition: .5s ease-in-out;
+}
+
+.hover-icon:hover {
+    opacity: .5;
+    box-shadow: 1px 1px 5px 2px #bbd7e4;
+
+}
+
+/* mood-playlist */
+/* resize the items on hovering on any element */
+.mood-container {
+    width: 100%;
+    height: auto;
+}
+
+.mood-container:hover span {
+    transform: scale(.90)
+}
+
+.mood-container>span:hover {
+    transform: scale(1.10);
+    box-shadow: 1px 1px 5px 2px #bbd7e4;
+    transition: 1s;
+}
+
+.mood-item-container {
+    position: relative;
+    width: 32%;
+    height: 10em;
+    min-width: 10em;
+    min-height: 7em;
+    margin-bottom: 1em;
+    transition: 1s ease-in-out;
+}
+
+.mood-item-container img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+.mood-item-div:hover {
+    opacity: .5;
+}
+
+.mood-item-div {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: grey;
+}
+
+/* Latest English and Hindi*/
+
+.Latest-English-Hindi-item {
+    width: 8em;
+    height: auto;
+}
+
+.Latest-English-Hindi-item img {
+    width: 8em;
+    height: 8em;
+
+}
+
+/* Aside */
+
+.aside-contanier{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    float: right;
+    padding-right: 5em;    
+}
+.aside {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.aside-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 3em;
+}
+#queue-menu {
+    position: relative;    
+}
+
+
+#queue-menu:hover .dropdown-content {
+    display: block;
+    left: -5em;
+}
+
+ul {
+    list-style: none;
+}
+
+.aside-item {
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.playlist-queue-item{
+  width: 100%;
+}
+.image-container-queue div {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: grey;
+    opacity: 1;
+}
+
+/* .image-container-queue>div:hover{
+opacity: .5;
+} */
+.image-container-queue {
+    height: 4em;
+    width: 4em;
+    display: inline-block;
+    background-image: url(bohemia-pic.jpg);
+    background-size: contain;
+}
+
+.aside i {
+    float: right;
+}
+
+/* Player */
+.player-container {
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    top: 88vh;
+    display: flex;
+    opacity: .9;
+    background-color: #282828;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 5em;
+}
+
+.song-info-contanier {
+    width: 30%;
+    height: 4em;
+}
+
+.love-icon {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+}
+
+.img-of-song {
+    height: 4em;
+    width: 4em;
+}
+
+.control-container-1 {
+    width: 50%;
+    flex-grow: 2;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.player-container a {
+    text-decoration: none;
+}
+
+.player-container li {
+    display: inline;
+    margin: 1em;
+}
+
+.progress-bars {
+    width: 100%;
+    height: auto;
+}
+
+.progress-bars p {
+    display: inline;
+}
+
+.total-length {
+    border-radius: .5em;
+    display: inline-block;
+    width: 80%;
+    height: .5em;
+    background-color: white;
+}
+
+.cur-prog {
+    float: left;
+    border-radius: .5em;
+    display: inline-block;
+    width: 50%;
+    height: .5em;
+    background-image: linear-gradient(To right, #4d962f, #a3df4a);
+}
+
+.control-container-2 {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volume-bar {
+    width: 13em;
+    height: .8em;
+}
+ /* Playlist  */
+
+ /* Info of band */
+ .card{
+     width: 100%;
+     height: auto;
+     background-color:#141b41 ;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: start;
+     align-items: center;
+ }
+ .card-image{
+   width: 40%;
+   height: 100%;
+   flex-grow: 1;
+   min-width: 15em;
+   min-height: 18em;
+   display: inline-block;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #141b41),
+url('https://source.unsplash.com/random');
+}
+.card-image *{
+    box-sizing: border-box;
+}
+.info-container{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding:2em ; 
+    flex-grow: 1;     
+}
+.info-container p{
+    font-size: .8em;
+    font-family: sans-serif;
+    display: inline;
+}
+.heading-card{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heading-card h3{
+    font-family: sans-serif;
+    display: inline;
+}
+.play-button-container{
+    display: flex;
+    height: auto;
+    width: 15em;
+    padding:1em ;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.special-button{
+    text-align: center;
+    padding:.5em;
+    height: 2em;
+    width: 7em;
+    display: block;
+    margin-bottom: .5em;
+    background-image:linear-gradient(To right, #30239e, #bd43d8);
+}
+/* Songs Cards */
+.song-card-contanier{
+    margin-bottom: 6em;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.song-card{
+    margin-top: .6em;
+    padding: .8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1a1e33;
+    background-image:linear-gradient(To bottom, #30239e, #bd43d8); width: 100%;
+    height: auto;
+    justify-content: space-between;   
+    align-items: center; 
+}
+.song-card-info{
+    width: 65%;
+    margin-top: 0px;
+}
+.icon-song-card i{
+    margin-left: 1em;
+}
+
+/* Media Queries
+This is Made up on Desktop-first Aapproach
+*/
+@media screen and (max-width: 768px)  {
+    /* remove aside */
+    body{
+        font-size: 15px;
+    }
+
+    .aside-contanier{
+        display: none;
+    }
+    /* Increase the width of main to 100% */
+    main{
+        width: 100%;
+        padding:0px 2em;
+    }
+    .player-container{
+        padding:0px 2em;
+    }
+    .control-container-2{
+        display: none;
+    }
+    /* hide Song Name from Player */
+    .song-info-contanier > span{
+         display: none;
+    }
+    .song-info-contanier{
+           width: auto;
+    }
+    /* Set Number Of element can be showed */
+    #Popular-artists a:nth-of-type(1n+5){
+        display: none;
+    }
+    .release-song-container:nth-of-type(1n+5){
+        display: none;   
+    }
+    .Latest-English-Hindi-item:nth-of-type(1n+4){
+        display: none;
+    }
+    .player-container{
+        top:89vh;
+    }
+  }
+
+ @media screen and (max-width:572px){
+    body{
+        font: 13px;
+    }
+    /* hide Notification icon and User Profile pic */
+     .head-menu > a{
+         display: none;
+     }
+     .head-menu > div{
+        display: none;
+    }
+    
+    .search-input{
+        width: 100%;
+        margin-left: 1em;
+    }
+    
+    .song-info-contanier{
+         display: none;
+     }
+     main{
+        width: 100%;
+        padding:0px 1.5em;
+    }
+    .release-song-container{
+        flex-grow: 1;
+    }
+    .player-container{
+        padding:0px 0em;
+    }
+
+    }
+    @media screen and (max-width:400px){
+        /* hide name  */
+      #logo div{
+          display: none;
+      }
+    }
